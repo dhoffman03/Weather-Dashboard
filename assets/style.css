@@ -1,0 +1,47 @@
+/* colors saved to vars */
+:root {
+    --cloud: #a7bdd8;
+    --storm: #324252;
+    --sunny: #c1946a;
+}
+
+/* font, text-color,and background-color set */
+body {
+    font-family: 'Raleway', sans-serif;
+    color: var(--cloud);
+    background-color: var(--storm);
+}
+
+header {
+    background-color: var(--cloud);
+    color: var(--storm);
+}
+
+/* border color changed */
+#searchInput {
+    background-color: var(--cloud);
+    border-color: var(--storm);
+    color: var(--storm);
+}
+
+#fiveDayResults {
+    background-color: var(--sunny);
+    color: var(--storm);
+}
+
+/* border type and color set */
+.customCity {
+    background-color: var(--sunny);
+    color: var(--storm);
+    border: solid var(--cloud);
+}
+
+.sidebar {
+    background-color: var(--sunny);
+    color: var(--storm);
+}
+
+.btn {
+    background-color: var(--storm);
+    color:var(--cloud);
+}
