@@ -26,7 +26,9 @@ WHEN I click on a city in the search history
 THEN I am again presented with current and future conditions for that city
 ```
 
-![image of deployed webpage]()
+![image of deployed webpage](./assets/deployedPage.png)
+![image of local storage](./assets/localStorage.png)
+
 
 
 ## Installation
@@ -37,7 +39,7 @@ The linked deployed website was deployed using GitHub pages.
 ## Usage
 The application can be viewed with the below links:
 
-* [Deployed website]()
+* [Deployed website](https://dhoffman03.github.io/Weather-Dashboard/)
 
 * [Code repository](https://github.com/dhoffman03/Weather-Dashboard.git)
 
