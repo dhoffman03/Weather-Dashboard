@@ -18,19 +18,25 @@ header {
 }
 
 /* border color changed */
-#searchInput {
+#search-input {
     background-color: var(--cloud);
     border-color: var(--storm);
     color: var(--storm);
 }
 
-#fiveDayResults {
-    background-color: var(--sunny);
-    color: var(--storm);
+/* Hide forecast results */ 
+#weather-content {
+    visibility: hidden;
 }
 
 /* border type and color set */
-.customCity {
+.custom-city {
+    background-color: var(--sunny);
+    color: var(--storm);
+    border: solid var(--cloud);
+}
+
+.card {
     background-color: var(--sunny);
     color: var(--storm);
     border: solid var(--cloud);
@@ -45,3 +51,4 @@ header {
     background-color: var(--storm);
     color:var(--cloud);
 }
+

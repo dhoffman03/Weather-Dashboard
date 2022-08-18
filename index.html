@@ -28,49 +28,87 @@
                 <div class="text-center">
                     <h2>Search for a City:</h2>
                 </div>
-                <div class="row m-0">
-                    <input id="searchInput" class="form-control mb-2" type="text" placeholder="Enter city">
-                    <button type="submit" id="searchBtn" class="btn btn-block">Search</button>
+                <div class="search row m-0">
+                    <input id="search-input" class="form-control mb-2" type="text" placeholder="Enter city">
+                    <button type="submit" id="search-btn" class="btn btn-block">Search</button>
                 </div>
                 <!-- History -->
                 <div id="history" class="row m-3">
-                    <ul class="list-group">
+                    <ul id="historic-cities" class="list-group">
                         <!-- Append li here -->
-                    </ul>
                 </div>
             </div>
 
             <!-- Forecast of city -->
-            <div id="weatherContent" class="col-9 p-3">
-                <div id="cityDetail" class="customCity col-12 rounded m-3">
+            <section id="weather-content" class="col-9 p-3">
+                <div class="custom-city col-12 rounded p-3">
                     <div class="row p-2">
-                        <h1 id="cityName">City Name:</h1>
-                        <h1 id="currentDate"></h1>
-                        <img id="weatherIcon">
+                        <h1 id="city-name"></h1>
+                        <h1 id="current-date"></h1>
+                        <img src="" id="weather-icon">
                     </div>
                     <!-- City's weather information -->
-                    <div>
-                        <p id="temp">Temp:</p>
-                    </div>
-                    <div>
-                        <p id="windSpeed">Wind:</p>
-                    </div>
-                    <div>
-                        <p id="humdity">Humidity:</p>
-                    </div>
+                    <p id="temp"></p>
+                    <p id="wind-speed"></p>
+                    <p id="humidity"></p>
                 </div>
                 <!-- 5-day forecast -->
-                <div class="row m-3">
-                    <h2>5-Day Forecast:</h2>
+                <div class="five-day-results row m-3">
+                    <h4>5-Day Forecast:</h4>
+                    <div class="container row">
+                        <div class="col">
+                            <div class="card">
+                                <h5 id="day-1"></h5>
+                                <img src="" id="img-1">
+                                <p id="temp-1"></p>
+                                <p id="wind-1"></p>
+                                <p id="humidity-1"></p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <h5 id="day-2"></h5>
+                                <img src="" id="img-2">
+                                <p id="temp-2"></p>
+                                <p id="wind-2"></p>
+                                <p id="humidity-2"></p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <h5 id="day-3"></h5>
+                                <img src="" id="img-3">
+                                <p id="temp-3"></p>
+                                <p id="wind-3"></p>
+                                <p id="humidity-3"></p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <h5 id="day-4"></h5>
+                                <img src="" id="img-4">
+                                <p id="temp-4"></p>
+                                <p id="wind-4"></p>
+                                <p id="humidity-4"></p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <h5 id="day-5"></h5>
+                                <img src="" id="img-5">
+                                <p id="temp-5"></p>
+                                <p id="wind-5"></p>
+                                <p id="humidity-5"></p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-                <div id="fiveDayResults" class="d-flex flex-row">
-                </div>
-            </div>
+            </section>
         </div>
         </div>
     </main>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
     <script src="./assets/script.js"></script>
 </body>
 
