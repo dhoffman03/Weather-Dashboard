@@ -29,7 +29,7 @@ header {
     visibility: hidden;
 }
 
-/* border type and color set */
+/* set border type and color */
 .custom-city {
     background-color: var(--sunny);
     color: var(--storm);
@@ -52,3 +52,9 @@ header {
     color:var(--cloud);
 }
 
+/* set border style, background and text color of appened li */
+.city-name {
+    background-color:  #365f8d;
+    color: #a7bdd8;
+    border-bottom: 2px solid #c1946a;
+}
